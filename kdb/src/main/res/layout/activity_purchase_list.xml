@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/id_topic_page_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eee"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_titlebar_default"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/purchase_search_market"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_gray_corner"
+                android:gravity="center"
+                android:text="选择市场"/>
+
+            <TextView
+                android:id="@+id/purchase_search_floor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_gray_corner"
+                android:gravity="center"
+                android:text="选择楼层"/>
+
+            <TextView
+                android:id="@+id/purchase_search_stalls"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_gray_corner"
+                android:gravity="center"
+                android:text="选择档口"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/purchase_search_keyword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_gray_corner"
+                android:gravity="center"
+                android:hint="关键字"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/purchase_search_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_gray_corner"
+                android:gravity="center"
+                android:text="选择市场"/>
+
+            <Button
+                android:id="@+id/purchase_search_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/bg_rect_gray_corner1"
+                android:text="搜索"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.nahuo.library.controls.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_group_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:scrollbars="vertical"
+        ptr:ptrMode="both"/>
+
+</LinearLayout>

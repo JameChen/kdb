@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nahuo.kdb.activity.ReservationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.nahuo.library.controls.pulltorefresh.PullToRefreshListViewEx
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="140dp"
+        android:divider="@color/white"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="true"
+        android:stretchMode="columnWidth" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="没数据了!亲您可以去下拉刷新" />
+</FrameLayout>

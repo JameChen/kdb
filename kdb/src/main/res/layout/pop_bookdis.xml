@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:id="@+id/item_detail_purchase_v"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_detail_purchase_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/item_detail_purchase_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_detail_purchase_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-10dp"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/me_orders"
+            />
+
+        <ImageView
+            android:id="@+id/item_detail_purchase_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-10dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/edit_blue"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_detail_green_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_green"
+        android:gravity="center"
+        android:text="关联采购单"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+

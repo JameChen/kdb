@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="12">
+
+
+        <TextView
+            android:id="@+id/item_detail_sizecolor_item_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="颜色" />
+
+    <TextView
+        android:id="@+id/item_detail_sizecolor_item_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="尺码" />
+
+    <TextView
+        android:id="@+id/item_detail_sizecolor_item_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="开单" />
+
+    <TextView
+        android:id="@+id/item_detail_sizecolor_item_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="欠货" />
+
+    <TextView
+        android:id="@+id/item_detail_sizecolor_item_5"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

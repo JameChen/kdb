@@ -1,0 +1,93 @@
+<resources>
+    <dimen name="main_line_height">10dp</dimen>
+    <dimen name="order_detail_stroke_width">1dp</dimen>
+    <dimen name="order_detail_radius">2dp</dimen>
+    <dimen name="rb_item_margin">2dp</dimen>
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="slidingmenu_shadow_width">5dp</dimen>
+    <dimen name="fontsize_content_Large">20sp</dimen>
+    <dimen name="fontsize_content_normal">12sp</dimen>
+    <dimen name="fontsize_content_default">12sp</dimen>
+    <dimen name="fontsize_content_middle">14sp</dimen>
+    <dimen name="fontsize_button_Large">18sp</dimen>
+    <dimen name="fontsize_button_normal">18sp</dimen>
+    <dimen name="fontsize_button_min">16sp</dimen>
+    <dimen name="fontsize_title_max">20sp</dimen>
+    <dimen name="fontsize_title_min">18sp</dimen>
+    <dimen name="fontsize_title_button_max">18sp</dimen>
+    <dimen name="fontsize_title_button_middle">16sp</dimen>
+    <dimen name="fontsize_title_button_min">14sp</dimen>
+    <dimen name="fontsize_content_small">12sp</dimen>
+    <dimen name="edittext_vertical_spacing">8dp</dimen>
+    <dimen name="button_vertical_spacing">32dp</dimen>
+    <dimen name="listview_item_height_big">60dp</dimen>
+    <dimen name="listview_item_height_medium">54dp</dimen>
+    <dimen name="listview_item_height">48dp</dimen>
+    <dimen name="listview_item_padding">8dp</dimen>
+    <!-- 长按钮的高度 -->
+    <dimen name="btn_height_long">52dp</dimen>
+    <dimen name="btn_height_normal">48dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+
+    <!-- body content -->
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+
+    <dimen name="item_detail_line_spacing">8dp</dimen>
+
+    <dimen name="expend_content_height">36dp</dimen>
+    <dimen name="btn_corner_radius">4dp</dimen>
+
+
+    <dimen name="single_line_item_height">54dp</dimen>
+    <dimen name="single_line_item_height_small">48dp</dimen>
+    <dimen name="line_height_mid">0.5dp</dimen>
+    <dimen name="line_height_small">0.1dp</dimen>
+    <dimen name="fontsize_upload_item_left">16sp</dimen>
+
+    <dimen name="me_item_height">48dp</dimen>
+    <dimen name="me_item_line_spacing">16dp</dimen>
+    <dimen name="me_item_right_text_max_width">138dp</dimen>
+
+    <dimen name="up_item_left_text_width">108dp</dimen>
+    <dimen name="vertical_sapcing_order">6dp</dimen>
+    <dimen name="titlebar_height">54dp</dimen>
+    <dimen name="bill_detail_img_size">60dp</dimen>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="top_tab_radius">18dp</dimen>
+    <dimen name="checkbox_height">48dp</dimen>
+
+    <!-- lib用 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="topbar_height">48dp</dimen>
+
+    <dimen name="item_comment_width">80dp</dimen>
+    <dimen name="top_tab_width">180dp</dimen>
+
+    <dimen name="supplier_item_height">108dp</dimen>
+    <dimen name="select_area_item_height">48dp</dimen>
+    <dimen name="select_area_item_width">168dp</dimen>
+    <dimen name="shop_stats_chart_height">280dp</dimen>
+    <dimen name="msg_head_size">44dp</dimen>
+    <dimen name="msg_item_height">64dp</dimen>
+    <dimen name="rv_horizontal_spacing">8dp</dimen>
+    <dimen name="rv_vertical_spacing">8dp</dimen>
+</resources>

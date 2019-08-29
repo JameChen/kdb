@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--已开单页面右上角的编辑功能-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/check_circle" android:state_checked="true" />
+    <item android:drawable="@mipmap/uncheck_circle" />
+
+</selector>

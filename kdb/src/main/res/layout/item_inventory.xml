@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="9dp"
+    android:background="@color/line_bg"></View>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/arrow_right"
+        android:text=""
+        android:textColor="@color/black_38"
+        android:textSize="15sp"
+        android:gravity="center|left"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg"></View>
+</LinearLayout>

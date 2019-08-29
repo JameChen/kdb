@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#fef200"  >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitEnd"
+        android:src="@drawable/new3" />
+
+    <Button
+        android:id="@+id/guide_btnForward"
+        android:background="@color/transparent"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="70dp" />
+
+</RelativeLayout>

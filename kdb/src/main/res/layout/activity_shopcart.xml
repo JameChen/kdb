@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nahuo.widget.TouchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EFF5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/layout_saller"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:visibility="gone">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="销售员"/>
+            <TextView
+                android:id="@+id/tv_saller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/more_mini"
+                android:drawablePadding="5dp"
+                android:text=""/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/line_bg"
+            android:layout_alignParentTop="true"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:id="@+id/rl_member"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会员信息"/>
+            <TextView
+                android:id="@+id/tv_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/iv_r"
+                android:layout_marginRight="2dp"
+                android:text=""/>
+            <ImageView
+                android:id="@+id/iv_r"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sweep_code_red"/>
+        </RelativeLayout>
+    <com.nahuo.library.controls.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_shopcart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_above="@+id/line"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/listview_item_bg"
+        app:mode="pullDownFromTop" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:text="暂无待支付商品\n请搜索或者扫描商品二维码" />
+
+        <TextView
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_rect_item_red"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="重新刷新"
+            android:textColor="@color/pin_huo_red"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_pin"
+            android:layout_width="128dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_rectangle_red"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="浏览热门的团"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@android:id/inputArea"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:id="@android:id/inputArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@android:id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:id="@android:id/inputArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@android:id/checkbox"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@android:id/text2"
+                style="@style/Text.M.Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/lightblack" />
+
+            <TextView
+                android:id="@android:id/summary"
+                style="@style/Text.S.Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共0件" />
+        </LinearLayout>
+
+        <Button
+            android:id="@android:id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_orange"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="开单"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@android:id/button2"
+            style="@style/Text.L.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@android:id/button1"
+            android:background="@drawable/bg_rect_gray_corner"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/delete"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_scroll_top"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/line"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:contentDescription="@android:string/ok"
+        android:onClick="onClick"
+        android:src="@drawable/scroll_to_top"
+        android:visibility="gone" />
+
+</com.nahuo.widget.TouchRelativeLayout>

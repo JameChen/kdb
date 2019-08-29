@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_topic_page_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/text_red"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/titlebar_btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@drawable/back"
+
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/titlebar_btnShopCart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:src="@drawable/shopping_cart"
+                android:text=""
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/titlebar_btnAdd"
+                android:layout_width="@dimen/titlebar_height"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/main_left_top_add"
+                android:text=""
+                android:textSize="@dimen/fontsize_title_button_middle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/titlebar_btnScan"
+                android:layout_width="@dimen/titlebar_height"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/sweep_code_white"
+                android:text=""
+                android:textSize="@dimen/fontsize_title_button_middle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/titlebar_btnSearch"
+                android:layout_width="@dimen/titlebar_height"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/find"
+                android:textSize="@dimen/fontsize_title_button_middle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize_button_Large" />
+
+    </RelativeLayout>
+
+    <com.nahuo.library.controls.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_group_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:scrollbars="vertical"
+        ptr:ptrMode="both" />
+
+    <TextView
+        android:id="@+id/kc_detail_txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_92"
+        android:padding="10dp"
+        android:visibility="gone"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/rl_batch_warehousing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="全选"
+            android:textColor="@color/btn_bg_blue_small"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/detail_view_dian_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_batch_warehousing"
+            android:background="@drawable/btn_white"
+            android:gravity="center"
+            android:text="点货"
+            android:textColor="@color/black_38"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_batch_warehousing"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="入库"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_calcel_exhibition"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="取消展示"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_exhibition"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_calcel_exhibition"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="展示"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_red"
+        android:gravity="center"
+        android:text="盘点列表"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/detail_view_txt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/detail_view_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="确认入库"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sale_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sale_detail_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_red"
+            android:gravity="center"
+            android:text="销售记录"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "com.nahuo.kdb"//(测试使用com.nahuo.quicksale)
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testApplicationId "com.nahuo.kdb.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        multiDexEnabled true
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    signingConfigs {
+        releaseStore {
+            storeFile file("D:\\asfilessave\\kdbandroid\\document\\keystore.jks")
+            storePassword "pengjun721"
+            keyAlias "快店宝"
+            keyPassword "pengjun721"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false //删除无用资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseStore
+        }
+        debug {
+            signingConfig signingConfigs.releaseStore
+        }
+    }
+
+}
+
+dependencies {
+    compile project(':nahuolibrary')
+    compile project(':baserecyclerlibrary')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //分享库
+    compile files('libs/qq_open_sdk_r4346_lite.jar')
+    compile project(':easeui')
+    compile files('libs/gprintersdkv22.jar')
+    compile files('libs/jcc-bate-0.7.3.jar')
+    compile files('libs/ksoap2-android-assembly-2.5.2-jar-with-dependencies.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile 'ch.ielse:switchbutton:1.0.0'
+    compile 'com.loopj.android:android-async-http:1.4.6'
+    compile 'com.facebook.stetho:stetho:1.1.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.tencent.bugly:crashreport:1.2.3.8'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+}

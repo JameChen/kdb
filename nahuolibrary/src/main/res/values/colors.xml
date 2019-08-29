@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kdb_dialog_text_color">#da1010</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#99FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#70000000</color>
+    <color name="black_actionbar">#90000000</color>
+    <color name="black_glass">#90727272</color>
+    <color name="red">#FFFF0000</color>
+    <color name="pin_huo_red_light">#ecc60a1e</color>
+    <color name="pin_huo_red">#C60A1E</color>
+    <color name="light_red">#E93149</color>
+    <color name="dark_red">#FFA70718</color>
+    <color name="darkgreen">#FF85EA4C</color>
+    <color name="green">#FF00FF00</color>
+    <color name="pro_green">#89cf89</color>
+    <color name="pro_blue">#648aea</color>
+    <color name="pro_red">#e73c47</color>
+    <color name="black_4_credit_bage">#333333</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="blue_edittext_border">#95004DFF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="purple">#FFFF00FF</color>
+    <color name="gray">#FF666666</color>
+    <color name="gray_transparent">#20666666</color>
+    <color name="lightgray">#FFBCBCBC</color>
+    <color name="orange">#FFF98700</color>
+    <color name="orange_press">#FFC76B00</color>
+    <color name="orangered">#FFDE5100</color>
+    <color name="orangered_transparent">#85DE5100</color>
+    <color name="orangered_press">#FFB24100</color>
+    <color name="lightblack">#FF353535</color>
+    <color name="skyblue">#FF2860a8</color>
+    <color name="pink">#FFFF3C7F</color>
+    <color name="gridview_item_border">#FF666666</color>
+    <color name="gridview_item_press_bg">#20666666</color>
+    <color name="theme_light_bg">#FFFFFFFF</color>
+    <color name="listview_item_press_bg">#20666666</color>
+    <color name="listview_title_bg">#FFF4F4F4</color>
+    <color name="window_background">#ffffffff</color>
+    <color name="dialog_loading_background">#80000000</color>
+    
+    <color name="main_tabbar_text_normal">#FF454545</color>
+    <color name="main_tabbar_bg">#FFf7f7f7</color>
+    <color name="main_tabbar_text_select">#C7282D</color>
+    <color name="underline_green">#85DD4C</color>
+    <color name="bg_gray">#ffeeeeee</color>
+    <color name="gray_01">#a3a2a2</color>
+	<color name="line_gray">#dcdcdc</color>
+    <color name="line_bg">#dcdcdc</color>
+	
+	<color name="bottom_menu_item_n">#F3F3F3</color>
+    <color name="bottom_menu_item_p">#D0D0D0</color>
+    <color name="bottom_menu_text_color">#979697</color>
+    <color name="share_menu_item_n">#333B3D</color>
+    <color name="share_menu_item_p">#262C2C</color>
+    <color name="bg_window_gray">#F6F6F4</color>
+    
+    <color name="circle_loading">#d2d2d2</color>
+</resources>
